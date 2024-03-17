@@ -1,0 +1,4 @@
+class HomeData {
+
+  String currentEmailAdress = "";
+}
