@@ -16,8 +16,9 @@ Sign-Up Screen:
 
 
 
-![Screenshot_1710722666](https://github.com/Trajoon/Assignment-6/blob/main/assets/153893124/ce21afef-f262-4091-82b7-5d397e8049ed.png)
-![018f2512-badd-4b2f-8ba2-dada3ede6753](https://github.com/Trajoon/Assignment-6/blob/main/assets/153893124/8a0b212d-b74e-4739-b052-36e055027cc5.png)
+<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/ce21afef-f262-4091-82b7-5d397e8049ed.png" width="200" />
+<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/8a0b212d-b74e-4739-b052-36e055027cc5.png" width="200" />
+
 
 
 
