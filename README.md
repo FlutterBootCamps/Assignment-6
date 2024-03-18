@@ -14,25 +14,25 @@ Here are some screenshots showcasing the user authentication process:
 
 Sign-Up Screen:
 
-<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/74f1cd82-6054-4c34-aadd-e0a967c1f407" width="300">
 
-<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/9f81f4bf-61f1-4afd-826a-22da624c0750" width="300">
+![018f2512-badd-4b2f-8ba2-dada3ede6753](https://github.com/Trajoon/Assignment-6/assets/153893124/8a0b212d-b74e-4739-b052-36e055027cc5)
+![Screenshot_1710722666](https://github.com/Trajoon/Assignment-6/assets/153893124/ce21afef-f262-4091-82b7-5d397e8049ed)
 
 
 
 Sign-In Screen:
 
-<img src="https://github.com/Trajoon/Assignment-6/blob/main/assets/153893124/f183b30d-eb6d-476a-b871-09f55fbfba4b" width="300">
+![Screenshot_1710723177](https://github.com/Trajoon/Assignment-6/assets/153893124/4de76270-a563-469d-963d-2e7d92d4e68c)
+
 
 Password Reset Screen:
-<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/47210cc6-1820-4947-b9da-dc643e76c246" width="300">
 
-<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/4548114d-e0a2-4e9d-978a-0746b2836a5e" width="300">
+![f76f9717-f407-4cec-a3fd-8e29521d827b](https://github.com/Trajoon/Assignment-6/assets/153893124/86c9e071-c536-4a1b-84ee-24013fabb9e3)
+![Screenshot_1710722678](https://github.com/Trajoon/Assignment-6/assets/153893124/97e1e28e-96a7-4f81-aa9d-cf3fa133ac17)
+
 
 
 Email Verification Screen:
 
-<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/5306b0b4-0c28-4e01-8143-d3644c0da90b" width="300">
+![Screenshot_1710722748](https://github.com/Trajoon/Assignment-6/assets/153893124/5738fe89-8abc-44fe-a299-f17a31671bdb)
 
-
-<img src="https://github.com/Trajoon/Project-7/assets/153893124/e9a82707-6460-481a-b50d-d26cb6f1d25b" width="200">
