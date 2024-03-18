@@ -14,10 +14,9 @@ Here are some screenshots showcasing the user authentication process:
 
 Sign-Up Screen:
 
+[![a1.png](https://i.postimg.cc/Lskdwsxq/a1.png)](https://postimg.cc/nsLwQnbZ)
 
 
-<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/ce21afef-f262-4091-82b7-5d397e8049ed.png" width="200" />
-<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/8a0b212d-b74e-4739-b052-36e055027cc5.png" width="200" />
 
 
 
