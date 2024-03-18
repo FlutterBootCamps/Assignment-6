@@ -1,5 +1,4 @@
 <h1>User Authentication with Supabase</h1>
-________________________________________________________________________________________________________________
 
 Overview
 In this Assignment, we've implemented various features to facilitate seamless user authentication:
@@ -9,7 +8,7 @@ Sign-In: Once registered, users can securely sign in to access the application's
 Password Reset: In case users forget their passwords, we provide a convenient password reset mechanism to regain access to their accounts.
 Email Verification: To ensure the validity and security of user accounts, we've integrated email verification, which confirms the authenticity of users' email addresses.
 
-- Screenshots
+<h3>- Screenshots</h3>
 Here are some screenshots showcasing the user authentication process:
 
 Sign-Up Screen and Email Verification:
