@@ -17,7 +17,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<SigninEvent>(signin);
     on<SignoutEvent>(signout);
     on<ResendConfirmationEmail>(resendConfirmEmail);
-    on<ResetPasswordEvent>(resetPassword);
+    on<SendOtpEvent>(sendOtp);
+    on<ConfirmOtpEvent>(confirmOtp);
+    on<ChangePasswordEvent>(changePassword);
   }
 
   FutureOr<void> signup(SignupEvent event, Emitter<AuthState> emit) async {
@@ -90,22 +92,65 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     }
   }
 
-  FutureOr<void> resetPassword(
-      ResetPasswordEvent event, Emitter<AuthState> emit) async {
+  FutureOr<void> sendOtp(
+      SendOtpEvent event, Emitter<AuthState> emit) async {
     emit(LoadingState());
 
     if (event.email.trim().isNotEmpty) {
       try {
         await DBService().sendOtp(email: event.email, );
-        emit(PasswordResetState(
+        emit(OtpSentState(
             msg:
-                "An email has been set to reset your password, check your inbox"));
-      } catch (e) {
+                "An email has been sent with an otp to reset your password, check your inbox"));
+                locator.currentEmailAdress = event.email;
+      }on AuthException catch (e) {
         print(e);
         emit(ErrorState(msg: "Email is invalid"));
+      } on Exception catch (e) {
+        print(e);
+        emit(ErrorState(msg: "There's an issue with our servers, please try again later"));
       }
     } else {
       emit(ErrorState(msg: "Please input email"));
     }
+  }
+
+  FutureOr<void> confirmOtp(ConfirmOtpEvent event, Emitter<AuthState> emit) async{
+    emit(LoadingState());
+
+    if(event.otpToken.trim().isNotEmpty){
+      try {
+        await DBService().verifyOtp(email: event.email, otpToken: event.otpToken);
+        emit(OtpConfirmedState(msg: "OTP Confirmed, please enter your new password"));
+      } on AuthException catch (e) {
+        print(e);
+        emit(ErrorState(msg: "Invalid OTP token, please try again"));
+      } on Exception catch(e) {
+        print(e);
+        emit(ErrorState(msg: "There's an issue with our servers, please try again later"));
+      }
+    }else {
+      emit(ErrorState(msg: "Please enter OTP"));
+    }
+  }
+
+  FutureOr<void> changePassword(ChangePasswordEvent event, Emitter<AuthState> emit) async{
+    emit(LoadingState());
+    if(event.password.trim().isNotEmpty && event.password.length >= 6){
+      try {
+      await DBService().changePassword(password: event.password);
+      emit(PasswordChangedState(msg: "Password Sucessfuly changed"));
+      await DBService().signout();
+    } on AuthException catch (e) {
+      print(e);
+      emit(ErrorState(msg: "You're not authorized to change your password"));
+    } on Exception catch(e) {
+      print(e);
+        emit(ErrorState(msg: "There's an issue with our servers, please try again later"));
+    }
+    }else {
+      emit(ErrorState(msg: "Please input your password (6 characters or more)"));
+    }
+    
   }
 }

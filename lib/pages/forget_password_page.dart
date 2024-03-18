@@ -1,5 +1,6 @@
 import 'package:assignment_6/bloc/auth_bloc.dart';
 import 'package:assignment_6/helpers/extensions/screen_helper.dart';
+import 'package:assignment_6/pages/enter_otp_page.dart';
 import 'package:assignment_6/utils/colors.dart';
 import 'package:assignment_6/utils/spacing.dart';
 import 'package:assignment_6/widgets/simple_text_field.dart';
@@ -34,8 +35,11 @@ class ForgetPasswordPage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: BlocConsumer<AuthBloc, AuthState>(
             listener: (context, state) {
-              if (state is PasswordResetState){
+              if (state is OtpSentState){
                 context.showSuccessSnackBar(context, state.msg);
+                context.push(context, EnterOtpPage(), true);
+              }else if (state is ErrorState){
+                context.showErrorSnackBar(context, state.msg);
               }
             },
             builder: (context, state) {
@@ -60,10 +64,10 @@ class ForgetPasswordPage extends StatelessWidget {
                               MaterialStatePropertyAll(blackColor)),
                       onPressed: () {
                         context.read<AuthBloc>().add(
-                            ResetPasswordEvent(email: emailController.text));
+                            SendOtpEvent(email: emailController.text));
                       },
                       child: const Text(
-                        "Reset Password",
+                        "Send OTP",
                         style: TextStyle(
                             color: whiteColor,
                             fontSize: 18,

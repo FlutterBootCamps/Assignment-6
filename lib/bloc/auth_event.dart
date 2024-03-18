@@ -26,8 +26,21 @@ final class ResendConfirmationEmail extends AuthEvent {
   ResendConfirmationEmail({required this.email});
 }
 
-final class ResetPasswordEvent extends AuthEvent {
+final class SendOtpEvent extends AuthEvent {
   final String email;
 
-  ResetPasswordEvent({required this.email});
+  SendOtpEvent({required this.email});
+}
+
+final class ConfirmOtpEvent extends AuthEvent {
+  final String email;
+  final String otpToken;
+
+  ConfirmOtpEvent({required this.email, required this.otpToken});
+}
+
+final class ChangePasswordEvent extends AuthEvent {
+  final String password;
+
+  ChangePasswordEvent({required this.password});
 }

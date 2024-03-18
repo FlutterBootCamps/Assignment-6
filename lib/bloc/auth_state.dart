@@ -19,10 +19,22 @@ final class EmailResentState extends AuthState {
   EmailResentState({required this.msg});
 }
 
-final class PasswordResetState extends AuthState {
+final class OtpSentState extends AuthState {
   final String msg;
 
-  PasswordResetState({required this.msg});
+  OtpSentState({required this.msg});
+}
+
+final class OtpConfirmedState extends AuthState {
+  final String msg;
+
+  OtpConfirmedState({required this.msg});
+}
+
+final class PasswordChangedState extends AuthState {
+  final String msg;
+
+  PasswordChangedState({required this.msg});
 }
 
 final class SignedInState extends AuthState {
