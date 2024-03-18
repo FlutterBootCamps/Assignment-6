@@ -1,5 +1,5 @@
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< User Authentication with Supabase >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-___________________________________________________________________________________________________________________________________________________________________
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< User Authentication with Supabase >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+________________________________________________________________________________________________________________
 
 Overview
 In this Assignment, we've implemented various features to facilitate seamless user authentication:
@@ -14,9 +14,11 @@ Here are some screenshots showcasing the user authentication process:
 
 Sign-Up Screen:
 
-<img src="https://github.com/Trajoon/Assignment-6/blob/main/assets/153893124/e1e743de-6429-4311-8753-6f495a018665.png" width="300">
+<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/74f1cd82-6054-4c34-aadd-e0a967c1f407.png" width="300">
 
-<img src="https://github.com/Trajoon/Assignment-6/blob/main/assets/153893124/3a77ff79-3476-4386-a42d-e886b29cc97b.png" width="300">
+<img src="https://github.com/Trajoon/Assignment-6/raw/main/assets/153893124/9f81f4bf-61f1-4afd-826a-22da624c0750.png" width="300">
+
+
 
 Sign-In Screen:
 
