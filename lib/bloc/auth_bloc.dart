@@ -105,7 +105,11 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
                 locator.currentEmailAdress = event.email;
       }on AuthException catch (e) {
         print(e);
+        if (e.statusCode == '429'){
+        emit(ErrorState(msg: "Email rate limit exceeded"));
+      }else {
         emit(ErrorState(msg: "Email is invalid"));
+      }
       } on Exception catch (e) {
         print(e);
         emit(ErrorState(msg: "There's an issue with our servers, please try again later"));

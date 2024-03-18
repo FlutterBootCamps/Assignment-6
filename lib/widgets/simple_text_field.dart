@@ -1,9 +1,10 @@
 import 'package:assignment_6/utils/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class SimpleTextField extends StatelessWidget {
   const SimpleTextField({
-    super.key, required this.labelText, required this.hintText, this.controller, this.textStyle, this.fillColor = whiteColor, this.hintLabelColor, this.isObscured = false,
+    super.key, required this.labelText, required this.hintText, this.controller, this.textStyle, this.fillColor = whiteColor, this.hintLabelColor, this.isObscured = false, this.inputFormatters,
   });
 
   final String labelText;
@@ -13,6 +14,7 @@ class SimpleTextField extends StatelessWidget {
   final TextEditingController? controller;
   final Color? hintLabelColor;
   final bool? isObscured;
+  final List<TextInputFormatter>? inputFormatters;
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,7 @@ class SimpleTextField extends StatelessWidget {
       obscureText: isObscured!,
       controller: controller,
       style: textStyle,
+      inputFormatters: inputFormatters,
       decoration: InputDecoration(
         labelText: labelText,
         hintText: hintText,

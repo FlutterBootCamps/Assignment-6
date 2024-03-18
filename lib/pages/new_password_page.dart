@@ -21,6 +21,7 @@ class NewPasswordPage extends StatelessWidget {
         backgroundColor: blackColor,
         leading: IconButton(
             onPressed: () {
+              context.read<AuthBloc>().add(SignoutEvent());
               Navigator.pop(context);
             },
             icon: const Icon(
@@ -67,6 +68,7 @@ class NewPasswordPage extends StatelessWidget {
                 ),
                 height32,
                 SimpleTextField(
+                  isObscured: true,
                   textStyle: const TextStyle(color: blackColor),
                   hintText: "New Password",
                   labelText: "New Password",

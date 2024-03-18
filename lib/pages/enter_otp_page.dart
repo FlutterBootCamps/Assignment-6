@@ -6,6 +6,7 @@ import 'package:assignment_6/utils/colors.dart';
 import 'package:assignment_6/utils/spacing.dart';
 import 'package:assignment_6/widgets/simple_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 
@@ -70,6 +71,7 @@ class EnterOtpPage extends StatelessWidget {
                 ),
                 height32,
                 SimpleTextField(
+                  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                   textStyle: const TextStyle(color: blackColor),
                   hintText: "Enter your OTP",
                   labelText: "OTP",

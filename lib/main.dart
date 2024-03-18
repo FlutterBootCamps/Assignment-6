@@ -1,5 +1,4 @@
 import 'package:assignment_6/bloc/auth_bloc.dart';
-import 'package:assignment_6/pages/email_confirm_page.dart';
 import 'package:assignment_6/pages/signup_page.dart';
 import 'package:assignment_6/utils/setup.dart';
 import 'package:flutter/material.dart';
