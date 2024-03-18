@@ -12,29 +12,25 @@ Email Verification: To ensure the validity and security of user accounts, we've 
 - Screenshots
 Here are some screenshots showcasing the user authentication process:
 
-Sign-Up Screen:
+Sign-Up Screen and Email Verification:
 
 [![a1.png](https://i.postimg.cc/Lskdwsxq/a1.png)](https://postimg.cc/nsLwQnbZ)
-
-
-
-
-
-
+[![a2.jpg](https://i.postimg.cc/GmkSh5GV/a2.jpg)](https://postimg.cc/xX1P6gs3)
 
 Sign-In Screen:
 
-![Screenshot_1710723177](https://github.com/Trajoon/Assignment-6/assets/153893124/4de76270-a563-469d-963d-2e7d92d4e68c)
+[![b1.png](https://i.postimg.cc/zXYQZNRK/b1.png)](https://postimg.cc/rzgjxvjw)
 
 
-Password Reset Screen:
+Password Reset Screens:
 
-![f76f9717-f407-4cec-a3fd-8e29521d827b](https://github.com/Trajoon/Assignment-6/assets/153893124/86c9e071-c536-4a1b-84ee-24013fabb9e3)
-![Screenshot_1710722678](https://github.com/Trajoon/Assignment-6/assets/153893124/97e1e28e-96a7-4f81-aa9d-cf3fa133ac17)
+[![c1.png](https://i.postimg.cc/rs1QFdtW/c1.png)](https://postimg.cc/MfGy9p5K)
+[![c2.jpg](https://i.postimg.cc/G3KDrJ4K/c2.jpg)](https://postimg.cc/SjXRf97Y)
+[![f1.png](https://i.postimg.cc/d0G7f8M8/f1.png)](https://postimg.cc/yJYYg38d)
 
 
 
-Email Verification Screen:
 
-![Screenshot_1710722748](https://github.com/Trajoon/Assignment-6/assets/153893124/5738fe89-8abc-44fe-a299-f17a31671bdb)
+
+
 
